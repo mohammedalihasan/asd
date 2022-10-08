@@ -11,7 +11,7 @@ def button_callback():
     H1=arcpy.SelectLayerByAttribute_management("table_output", "NEW_SELECTION",query1)
     total=arcpy.GetCount_management(H1)
     tot=float(total.getOutput(0))
-    print ("total number is"+str(tot))
+    print ("total numberrrrrrrrrr is"+str(tot))
 
     query2 = " area >=120 AND area <=4200 "+" AND Data__Land LIKE 'سكني'"
     H2=arcpy.SelectLayerByAttribute_management("table_output", "NEW_SELECTION",query2)
